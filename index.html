@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chuyển hướng an toàn</title>
+  <style>
+    .loader { border: 3px solid #f3f3f3; border-top: 3px solid #6C63FF; border-radius: 50%; width: 15px; height: 15px; animation: spin 1s linear infinite; display: inline-block; margin-right: 8px; vertical-align: middle; }
+    @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background: #f0f2f5; margin: 0;}
+    .card { background: white; padding: 30px; border-radius: 12px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1); max-width: 90%; }
+    .btn { background: #6C63FF; color: white; padding: 12px 24px; border: none; border-radius: 6px; cursor: pointer; font-size: 16px; text-decoration: none; display: inline-block; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>📚 Hệ thống Trí tuệ</h2>
+    <p>Vui lòng nhấn nút dưới đây để truy cập trên điện thoại (sẽ mở tab mới để tránh lỗi).</p>
+    <a href="https://script.google.com/macros/s/AKfycbyo5YXY3rBGecTfzSLU9cLNnH3crjoWmhbOsDDdYRRsUId-qyjHogGDzmtsEK38lK5_/exec" target="_blank" class="btn" onclick="showLoading(this)">
+      Truy cập ngay
+    </a>
+  </div>
+  <script>
+    function showLoading(btn) { btn.innerHTML = '<div class="loader"></div> Đang kết nối...'; }
+  </script>
+</body>
+</html>
